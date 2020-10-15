@@ -1,0 +1,42 @@
+$primary-color: #443a8b;
+$secondary-color: #ef5350;
+$tertiary-color: #fe6192;
+$accent-color-one: #2391ee;
+$accent-color-two: #50efcb;
+$text-color: darken(#b2b1b8, 10%);
+$lead-text-color: #b3b2b8;
+$light-text-color: #ffffff;
+$highlight-bg-color: #f7f7f7;
+$contrast-color: #232227;
+$line-color: #424242;
+$line-color-vibrant: #ef5350;
+$line-color-form: #2d2464;
+$show-home-image: true;
+$home-image: url(/dist/assets/1c1a776524f826f25d1238af42435a98.jpg);
+$background-opacity: 0.9;
+
+$font: "Montserrat", sans-serif;
+$font-size: 1.6rem;
+$font-secondary: "Playfair Display", serif;
+@mixin easeOut {
+  transition: all 1.5s ease-out;
+}
+@mixin background {
+  @if $show-home-image {
+    &#bg-image {
+      background: $home-image;
+      background-image: fixed;
+      background-size: cover;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}
