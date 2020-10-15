@@ -1,0 +1,17 @@
+{
+  "name": "own-portfolio",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w -C:/projects/own-portfolio scss/  -o dist/css/ --recursive"
+  },
+  "author": "Roopam",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "npm-install-missing": "^0.1.4"
+  }
+}
