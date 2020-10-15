@@ -12,4 +12,23 @@
     background: wheat;
     @include easeOut;
   }
+  &.close {
+    transform: rotate(180deg);
+    .btn-line {
+      //line 1 hide
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      //line 2 rotate
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+
+      //line 3 hide
+    }
+  }
 }
