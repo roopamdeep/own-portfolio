@@ -91,6 +91,14 @@ main {
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
 }
+//work/projects
+
+.projects {
+  display: grid;
+  img {
+    width: 100%;
+  }
+}
 .main-footer {
   text-align: center;
   padding: 1rem;

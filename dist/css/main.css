@@ -96,7 +96,7 @@ body {
   line-height: 1.5;
   font-family: "Montserrat", sans-serif, serif; }
   body#bg-image {
-    background: url(/dist/assets/1c1a776524f826f25d1238af42435a98.jpg);
+    background: url(/dist/assets/3.jpg);
     background-image: fixed;
     background-size: cover; }
     body#bg-image:after {
@@ -183,6 +183,11 @@ main {
   padding: 0.5rem;
   border-bottom: #ef5350 5px solid; }
 
+.projects {
+  display: grid; }
+  .projects img {
+    width: 100%; }
+
 .main-footer {
   text-align: center;
   padding: 1rem;
@@ -213,7 +218,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
   .potrait {
-    background: url("../dist/assets/1c1a776524f826f25d1238af42435a98.jpg");
+    background: url("../dist/assets/3.jpg");
     width: 150px;
     height: 150px; }
   .about-info {
