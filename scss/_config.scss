@@ -1,16 +1,7 @@
 $primary-color: #443a8b;
 $secondary-color: #ef5350;
 $tertiary-color: #fe6192;
-$accent-color-one: #2391ee;
-$accent-color-two: #50efcb;
-$text-color: darken(#b2b1b8, 10%);
-$lead-text-color: #b3b2b8;
-$light-text-color: #ffffff;
-$highlight-bg-color: #f7f7f7;
-$contrast-color: #232227;
-$line-color: #424242;
-$line-color-vibrant: #ef5350;
-$line-color-form: #2d2464;
+
 $show-home-image: true;
 $home-image: url(/dist/assets/1c1a776524f826f25d1238af42435a98.jpg);
 $background-opacity: 0.9;
@@ -38,6 +29,14 @@ $font-secondary: "Playfair Display", serif;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+//set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return black;
+  } @else {
+    @return wheat;
   }
 }
 //media mixins
