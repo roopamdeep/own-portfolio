@@ -1,9 +1,9 @@
-$primary-color: #443a8b;
-$secondary-color: #ef5350;
+$primary-color: #243665;
+$secondary-color: #8bd8bd;
 $tertiary-color: #fe6192;
 
 $show-home-image: true;
-$home-image: url(/dist/assets/3.jpg);
+$home-image: url(/dist/assets/116905828_1924677081002904_2280564566664473085_n.jpg);
 $background-opacity: 0.9;
 
 $font: "Montserrat", sans-serif;
@@ -36,7 +36,7 @@ $font-secondary: "Playfair Display", serif;
   @if (lightness($color) > 40) {
     @return black;
   } @else {
-    @return wheat;
+    @return white;
   }
 }
 //media mixins
