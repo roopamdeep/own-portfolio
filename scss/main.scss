@@ -61,6 +61,7 @@ main {
     }
   }
 }
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -158,4 +159,5 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
+
 @import "mobile";
