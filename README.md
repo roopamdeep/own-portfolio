@@ -1,1 +1,1 @@
-Portfolio website for Roopam, Full stack developer
+Portfolio website for Roopam, Built with HTML, CSS, Javascript
